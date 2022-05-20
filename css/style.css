@@ -37,7 +37,7 @@ body {
 
 #header {
     height: 60px;
-    background-color:  rgba(16, 16, 16  , 0.85);
+    background-color:  rgb(16, 130, 234);
     position: relative;
     display: flex;
     align-items: center;
@@ -50,6 +50,19 @@ body {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
+}
+
+#logo img {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#logo p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
 }
 
 #filter {
@@ -70,7 +83,7 @@ body {
   min-width: 50px;
   height: var(--switch-height);
   border: 1px solid #131314;
-  background: #17191c;
+  background: #32382e;
   color:#fff;
   border-radius: var(--switch-height);
   cursor: pointer;
