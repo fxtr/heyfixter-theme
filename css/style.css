@@ -282,6 +282,12 @@ h1 {
 }
 
 .scoreboard__user__stats__list img {
+    display: block;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.scoreboard__user__stats__list .score.mini img {
     display: inline;
     flex-shrink: 0;
     margin-right: 10px;
