@@ -59,10 +59,10 @@ body {
 }
 
 #logo p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     font-weight: bolder;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #filter {
@@ -129,12 +129,12 @@ body {
   width: var(--switch-handle-size);
   height: var(--switch-handle-size);
   border-radius: var(--switch-handle-size);
-  background: #F4C99D;
+  background: white;
   transition: left .3s, transform .3s, width .3s;
 }
 
 .c-switch__values:hover::after {
-  background: #DEAE7E;
+  background: white;
 }
 
 .c-switch__values:active::after {
