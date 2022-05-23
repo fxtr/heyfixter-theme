@@ -277,12 +277,17 @@ h1 {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .scoreboard__user__stats__list img {
-    display: block;
+    display: inline;
     flex-shrink: 0;
     margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
 }
 
 .scoreboard__user__stats__list strong {

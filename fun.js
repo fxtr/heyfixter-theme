@@ -205,12 +205,19 @@ function addStatsRow(user, container) {
         <li>
             <img class="avatar" width="30" height="30" src="${user.avatar}">
             <strong>${user.name}</strong>
-            <span class="score mini good">${user.scoreinc}&nbsp;&nbsp;&nbsp;</span>
-            <span class="score mini overdrawn">${user.scoreincOverdrawn}&nbsp;&nbsp;&nbsp;</span>
-            <span class="score mini bad">${user.scoredec}&nbsp;&nbsp;&nbsp;</span>
-            <span class="score mini overdrawn">${user.scoredecOverdrawn}</span>
+            <span class="score mini good">${user.scoreinc}&nbsp;&nbsp;&nbsp;<img src="./favicon.png" /></span>
         </li>
     `;
+    // const html = `
+    //     <li>
+    //         <img class="avatar" width="30" height="30" src="${user.avatar}">
+    //         <strong>${user.name}</strong>
+    //         <span class="score mini good">${user.scoreinc}&nbsp;&nbsp;&nbsp;</span>
+    //         <span class="score mini overdrawn">${user.scoreincOverdrawn}&nbsp;&nbsp;&nbsp;</span>
+    //         <span class="score mini bad">${user.scoredec}&nbsp;&nbsp;&nbsp;</span>
+    //         <span class="score mini overdrawn">${user.scoredecOverdrawn}</span>
+    //     </li>
+    // `;
 
     container.appendChild(document.createRange().createContextualFragment(html));
 }
