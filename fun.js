@@ -79,11 +79,11 @@ let scoreType = getLocalStorage('scoreType') || 'inc';
 let userType = getLocalStorage('userType') || 'member';
 
 const filteraSwitch = document.getElementById('switchToFromInput');
-const filterbSwitch = document.getElementById('switchTypeInput');
+// const filterbSwitch = document.getElementById('switchTypeInput');
 const filtercSwitch = document.getElementById('switchUserTypesInput');
 
 filteraSwitch.checked = (listType === 'to' ) ? true : false;;
-filterbSwitch.checked = (scoreType === 'inc' ) ? true : false;
+// filterbSwitch.checked = (scoreType === 'inc' ) ? true : false;
 filtercSwitch.checked = (userType === 'member' ) ? true : false;
 
 async function fetcher (type, {username,listType, scoreType}) {
@@ -128,14 +128,14 @@ filteraSwitch.addEventListener('click', async (ev) => {
     render();
 });
 
-filterbSwitch.addEventListener('click', async (ev) => {
-    const score = (scoreType === 'inc') ? 'dec' : 'inc';
-    scoreType = score;
-    setLocalStorage('scoreType',score);
-    store = await fetcher('scoreboard',{listType, scoreType});
-    sortUsers();
-    render();
-});
+// filterbSwitch.addEventListener('click', async (ev) => {
+//     const score = (scoreType === 'inc') ? 'dec' : 'inc';
+//     scoreType = score;
+//     setLocalStorage('scoreType',score);
+//     store = await fetcher('scoreboard',{listType, scoreType});
+//     sortUsers();
+//     render();
+// });
 
 filtercSwitch.addEventListener('click', async (ev) => {
     const memberType = (userType === 'member') ? 'all' : 'member';
